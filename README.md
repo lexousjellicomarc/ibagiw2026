@@ -18,7 +18,8 @@ Online flipbook of the 9th Ibagiw Creative Festival media kit, invitation and pr
 ```bash
 pip install pillow pymupdf          # plus poppler-utils for pdftoppm
 python3 tools/build_pages.py path/to/new.pdf
-git add -A && git commit -m "Update programme" && git push
+git add -A && git commit -m "Update programme"
+git push origin main main:gh-pages  # the live site is published from the gh-pages branch
 ```
 
 GitHub Pages republishes within a minute or two, and anyone who scans the QR code sees the new version.
