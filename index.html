@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>IBAGIW 2026 · 9th Baguio Creative Festival</title>
+  <meta name="description" content="Flip through the 9th Ibagiw Creative Festival media kit, invitation and programme. RIKUS: A Creative Circular Baguio · 5–8 November 2026 · Baguio City.">
+  <meta name="theme-color" content="#0d2316">
+  <link rel="canonical" href="https://lexousjellicomarc.github.io/ibagiw2026/">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IBAGIW 2026">
+  <meta property="og:title" content="IBAGIW 2026 · 9th Baguio Creative Festival">
+  <meta property="og:description" content="Flip through the media kit, invitation and programme. 5–8 November 2026 · Baguio City.">
+  <meta property="og:url" content="https://lexousjellicomarc.github.io/ibagiw2026/">
+  <meta property="og:image" content="https://lexousjellicomarc.github.io/ibagiw2026/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="IBAGIW 2026 media kit cover and convergence meeting invitation">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preload" as="image" href="pages/1240/page-01.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/vendor/photoswipe/photoswipe.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="IBAGIW 2026, back to the cover">
+        <img class="brand-mark" src="assets/img/mark.png" alt="" width="34" height="34">
+        <span class="brand-text">
+          <strong>IBAGIW <span class="gold">2026</span></strong>
+          <small>9th Baguio Creative Festival</small>
+        </span>
+      </a>
+      <div class="actions">
+        <button class="icon-btn" id="btnShare" type="button" aria-label="Share this flipbook" title="Share">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="M8.3 10.8l7.4-4.3M8.3 13.2l7.4 4.3"/></svg>
+        </button>
+        <a class="icon-btn" id="btnDownload" href="ibagiw-2026.pdf" download aria-label="Download PDF (7 MB)" title="Download PDF (7 MB)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11M7 10l5 5 5-5M4.5 16.5v2.2c0 .7.6 1.3 1.3 1.3h12.4c.7 0 1.3-.6 1.3-1.3v-2.2"/></svg>
+        </a>
+        <button class="icon-btn" id="btnFullscreen" type="button" aria-label="Full screen" title="Full screen" hidden>
+          <svg class="fs-enter" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+          <svg class="fs-exit" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="stage" id="stage">
+      <div class="book" id="book" data-pages="22" aria-label="Flipbook"></div>
+      <button class="side-nav prev" id="sidePrev" type="button" aria-label="Previous page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button class="side-nav next" id="sideNext" type="button" aria-label="Next page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <div class="loader" id="loader" role="status">
+        <img class="loader-mark" src="assets/img/mark.png" alt="" width="64" height="64">
+        <span>Loading pages…</span>
+      </div>
+    </main>
+
+    <nav class="bottombar" aria-label="Flipbook controls">
+      <button class="pill-btn" id="btnPages" type="button" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.2"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.2"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.2"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.2"/></svg>
+        <span>Pages</span>
+      </button>
+      <div class="pager">
+        <button class="icon-btn" id="btnPrev" type="button" aria-label="Previous page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+        </button>
+        <span class="page-label" id="pageLabel" aria-live="polite">1 / 22</span>
+        <button class="icon-btn" id="btnNext" type="button" aria-label="Next page">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <button class="pill-btn" id="btnZoom" type="button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L20 20M10.5 7.5v6M7.5 10.5h6"/></svg>
+        <span>Zoom</span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="sheet" id="thumbs" role="dialog" aria-modal="true" aria-labelledby="thumbsTitle" hidden>
+    <div class="sheet-head">
+      <h2 id="thumbsTitle">All pages</h2>
+      <button class="icon-btn" id="btnCloseThumbs" type="button" aria-label="Close page list">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="thumb-grid" id="thumbGrid"></div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">
+      <p>This flipbook needs JavaScript.</p>
+      <p><a href="ibagiw-2026.pdf">Open the PDF instead</a></p>
+    </div>
+  </noscript>
+
+  <script src="assets/vendor/page-flip/page-flip.browser.js" defer></script>
+  <script src="assets/vendor/photoswipe/photoswipe.umd.min.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
