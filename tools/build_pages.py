@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 from PIL import Image
 
@@ -81,6 +82,10 @@ def main():
         html = re.sub(r'data-pages="\d+"', f'data-pages="{count}"', html)
         html = re.sub(r'id="pageLabel" aria-live="polite">[^<]*<', f'id="pageLabel" aria-live="polite">1 / {count}<', html)
         html = re.sub(r"Download PDF \(\d+ MB\)", f"Download PDF ({mb} MB)", html)
+        # new version stamp so browsers fetch the new pages instead of cached ones
+        stamp = time.strftime("%Y%m%d%H%M")
+        html = re.sub(r'data-version="\d*"', f'data-version="{stamp}"', html)
+        html = re.sub(r"\?v=\d+", f"?v={stamp}", html)
         open(index, "w", encoding="utf-8").write(html)
         print(f"Done: {count} pages, PDF {mb} MB. Commit and push to publish.")
     finally:

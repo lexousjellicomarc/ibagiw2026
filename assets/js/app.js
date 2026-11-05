@@ -31,8 +31,12 @@
 
   var isTouch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
 
+  // bumped whenever page images change, so returning visitors never see an old cached page
+  var VERSION = bookEl.getAttribute('data-version') || '';
   function pad(n) { return (n < 10 ? '0' : '') + n; }
-  function src(size, n, ext) { return 'pages/' + size + '/page-' + pad(n) + '.' + ext; }
+  function src(size, n, ext) {
+    return 'pages/' + size + '/page-' + pad(n) + '.' + ext + (VERSION ? '?v=' + VERSION : '');
+  }
 
   /* ---------- WebP support (the zoom viewer needs a single URL per page) ---------- */
   var webpOK = null;
@@ -159,9 +163,11 @@
 
   function setSources(p, retry) {
     var size = p.hd ? '2480' : '1240';
-    var q = retry ? '?retry=' + p.tries : '';
-    p.source.srcset = src(size, p.n, 'webp') + q;
-    p.img.src = src(size, p.n, 'jpg') + q;
+    var withRetry = function (u) {
+      return retry ? u + (u.indexOf('?') === -1 ? '?' : '&') + 'retry=' + p.tries : u;
+    };
+    p.source.srcset = withRetry(src(size, p.n, 'webp'));
+    p.img.src = withRetry(src(size, p.n, 'jpg'));
   }
 
   function startLoad(p) {
