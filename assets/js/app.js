@@ -80,7 +80,9 @@
   function makePage(num) {
     var el = document.createElement('div');
     el.className = 'page';
-    el.setAttribute('data-density', (num === 1 || num === COUNT) ? 'hard' : 'soft');
+    // first page is a stiff cover; the last page is one too only when it stands alone (even page count)
+    var stiff = num === 1 || (num === COUNT && COUNT % 2 === 0);
+    el.setAttribute('data-density', stiff ? 'hard' : 'soft');
 
     var inner = document.createElement('div');
     inner.className = 'page-inner';

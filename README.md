@@ -1,6 +1,6 @@
 # IBAGIW 2026 · Flipbook
 
-Online flipbook of the 9th Ibagiw Creative Festival media kit, invitation and programme (22 pages), published free with GitHub Pages.
+Online flipbook of the 9th Ibagiw Creative Festival Opening Gala programme, media kit, invitations and programme (25 pages), published free with GitHub Pages.
 
 **Live:** https://lexousjellicomarc.github.io/ibagiw2026/
 
@@ -10,7 +10,7 @@ Online flipbook of the 9th Ibagiw Creative Festival media kit, invitation and pr
 - One page at a time on phones, two-page spreads on wider screens
 - **Zoom** opens a sharp 300-DPI copy of each page (pinch, double-tap, or scroll to zoom)
 - **Pages** lists every page to jump straight to one
-- **Download** gives a lighter 7 MB copy of the PDF (the original was 40 MB)
+- **Download** gives a lighter 8 MB copy of the full PDF
 - Page links: add `#p=10` to the address to open on page 10
 
 ## Updating the content (the QR code stays the same)
